@@ -21,22 +21,41 @@
       #content {
         display: none;
       }
+
+      .fb-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3b5998;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+        text-align: center;
+      }
+    
+      .fb-button:hover {
+          background-color: #2d4373;
+      }
     </style>
   </head>
   <body>
-    <div id="loading">
-      <img src="albercadaDeValientes.jpeg" alt="Albercada de Valientes">
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+      <a href="https://www.facebook.com/ValientesSmirna/" class="fb-button">Facebook Valientes de David</a>
     </div>
-    <div id="content">      
+    <div id="loading" style="text-align: center;">
       <img src="logoValientesDeDavid.png" alt="Cargando...">
     </div>
+    <div id="content" style="text-align: center;">
+      <img src="albercadaDeValientes.jpeg" alt="Albercada de Valientes">
+    </div>
     <script>
-      <!-- 
+
       setTimeout(function() {
         document.getElementById("loading").style.display = "none";
+        document.getElementById("content").style.display = "block";
       }, 2000);
-      -->
-      document.getElementById("content").style.display = "block";
+      
     </script>
   </body>
 </html>
